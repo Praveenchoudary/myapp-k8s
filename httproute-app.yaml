@@ -5,7 +5,6 @@ metadata:
 spec:
   parentRefs:
     - name: api-gateway
-      namespace: default
   hostnames:
     - argoapp.praveens.online
   rules:
@@ -15,5 +14,4 @@ spec:
             value: /
       backendRefs:
         - name:  myapp-service
-          namespace: default
           port: 80
