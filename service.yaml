@@ -3,11 +3,11 @@ kind: Service
 metadata:
   name: myapp-service
 spec:
-  type: NodePort
+  type: clusterIssuer
   selector:
     app: myapp
   ports:
     - port: 80
       targetPort: 80
-      nodePort: 30080
+      
 
